@@ -1,0 +1,14 @@
+{
+    "name": "bodepudi_personalsite",
+    "version": "0.0.1",
+    "description": "resume app",
+    "main": "app.js",
+    "dependencies": {
+        "body-parser": "latest",
+        "ejs": "latest",
+        "express": "latest",
+        "mailgun-js": "^0.22.0",
+        "morgan": "latest"
+    },
+    "license": "Apache-2.0"
+}

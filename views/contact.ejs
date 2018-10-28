@@ -1,0 +1,91 @@
+<% include header.ejs%>
+<style>
+  body {font-family: Arial;}
+  * {box-sizing: border-box;}
+  
+  
+  input[type=text], select, textarea {
+      width: 100%;
+      padding: 05px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+     
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+  
+  input[type=submit] {
+      background-color: #4CAF50;
+      color: rgb(255, 255, 255);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+      background-color: #14db1e;
+  }
+  
+  .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 5px;
+  }
+  </style>
+  </head>
+  <body background="back.png">
+     
+
+
+
+<b>Mallikarjuna Bodepudi</b>
+<p>Graduate Student at Northwest Missouri State University</p>
+<p>contact: bmalli77@gmail.com</p>
+<div>
+<a href="https://github.com/malli9999">github
+  <img src="download.png" alt="github" style="width:42px;height:42px;border:0;">
+  </a>
+  <a href="https://bitbucket.org/MallikarjunaBodepudi/" >bitbucket
+    <img src="bitbucket.png" alt="bitbucket"style="width:42px;height:42px;border:0;">
+    </a>
+    <a href="https://www.linkedin.com/in/mallikarjuna-bodepudi-97a9b7162/">linkedin
+      <img src="linkedin.png" alt="linkedin" style="width:75px;height:42px;border:0;">
+    </a><br>
+    <a href="https://www.facebook.com/">facebook
+      <img src="fb.png" alt="facebook" style="width:42px;height:42px;border:0;">
+    </a>
+    </div>>
+
+
+<h3>Contact Form</h3>
+
+<div class="container">
+
+<form method="POST" action="contact" role="form"onsubmit="done()">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" pattern="[a-zA-Z]+" required>
+
+  <label for="lname">LastName</label>
+  <input type="text" id="lname" name="lastname" required>
+
+  
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+
+  <label for="subject">Feedback</label>
+  <textarea id="subject" name="Feedback" placeholder="Any Comments....." style="height:200px" required></textarea>
+
+  <input type="submit" value="Submit">
+  
+   
+</form>
+<script>
+
+</Script>
+</div>
+<% include footer.ejs%>
