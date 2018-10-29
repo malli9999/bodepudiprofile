@@ -13,7 +13,8 @@ const http = require('http').Server(app) // inject app into the server
 // 5 handle valid POST request (not required to fully work)
 // 6 respond with 404 if a bad URI is requested
 // Listen for an application request on port 8081
-
+ 
+const port=process.env.PORT ||8081;
 // 1 set up the view engine
 app.set("views", path.resolve(__dirname, "views")) // path to views
 app.set("view engine", "ejs") // specify our view
@@ -94,6 +95,8 @@ app.get(function (req, res) {
     res.render("404")
 })
 // Listen for an application request on designated port
+ 
+//const port=process.env.PORT ||8081;
 app.listen(process.env.PORT || 8081, function () {
-    console.log('Web app started and listening on http://localhost:' )
+    console.log('Web app started and listening on http://localhost:8081' )
 });

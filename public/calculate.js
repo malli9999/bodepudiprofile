@@ -7,15 +7,18 @@ function done() {
 function large() {
 
     alert("You selected the large pizza of $20");
+    return 'large';
+
 }
 function medium() {
 
     alert("you selected the medium pizza of $15");
-
+    return 'medium';
 }
 function small() {
 
     alert("you selected the small pizza of $10");
+    return 'small';
 }
 function formSubmit() {
     let form = new FormData(document.querySelector('form[name="myForm"]'))

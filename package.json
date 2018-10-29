@@ -10,5 +10,8 @@
         "mailgun-js": "^0.22.0",
         "morgan": "latest"
     },
+    "scripts": {
+        "start":"node app.js"
+    },
     "license": "Apache-2.0"
 }
